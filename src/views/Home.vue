@@ -24,7 +24,7 @@ export default {
   name: "Home",
   components: {
     GreetingHome,
-    CardLecture
+    CardLecture,
   },
 };
 </script>
@@ -35,6 +35,5 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-
 }
 </style>

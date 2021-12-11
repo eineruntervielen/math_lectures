@@ -17,7 +17,10 @@ export default {
   width: 100%;
   height: 90px;
   display: flex;
+  position: sticky;
   border-bottom: 1px solid #e1ebf2;
+  background-color: white;
+  z-index: 1;
 }
 
 #nav a {

@@ -1,14 +1,14 @@
 <template>
 <div class="definition">
   <h1>Definition {{ nummer }}</h1>
-  <vue-mathjax :formula="txt" />
-</div>
+  <span v-html="txt"></span>
+ </div>
 
 </template>
 
 <script>
 export default {
-  name: "Definition",
+  name: "definition",
   props: {
     nummer: String,
     txt: String
@@ -17,12 +17,14 @@ export default {
 </script>
 
 <style scoped>
+.definition {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px #2c3e50 dashed;
+  border-radius: 1rem;
+}
 .definition h1 {
   font-size: 1.5rem;
-  margin: 0;
-}
-.definition p{
-  font-size: 1rem;
   margin: 0;
 }
 </style>
