@@ -1,15 +1,18 @@
 <template>
+  <!-- <NavigationSlide /> -->
   <Navigation />
     <router-view/>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
+// import NavigationSlide from "./components/NavigationSlide.vue";
 
 export default {
   name: "App",
   components: {
     Navigation,
+    // NavigationSlide
   },
 };
 </script>
@@ -26,6 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   font-size: 16pt;
+}
+#app a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .content {

@@ -1,14 +1,18 @@
 <template>
-  <div class="card-lecture">
+  <a :href="innerRef">
+    <div class="card-lecture">
       <div class="card-lecture-header">
-    <h1>{{ header }}</h1>
+        <h1>{{ header }}</h1>
       </div>
-    <p>{{ description }}</p>
-    <div class="card-lecture-footer">
-      <font-awesome-icon icon="list" />
-      <label class="card-lecture-chapter">{{ numberOfChapters }} Kapitel</label>
+      <p>{{ description }}</p>
+      <div class="card-lecture-footer">
+        <font-awesome-icon icon="list" />
+        <label class="card-lecture-chapter"
+          >{{ numberOfChapters }} Kapitel</label
+        >
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 
@@ -19,6 +23,7 @@ export default {
     header: String,
     description: String,
     numberOfChapters: String,
+    innerRef: String,
   },
 };
 </script>
@@ -39,19 +44,18 @@ export default {
 }
 
 .card-lecture-header {
-    display: flex;
-    height: 80px;
-    align-content: center;
+  display: flex;
+  height: 80px;
+  align-content: center;
 }
 
 .card-lecture-info {
-    display: block;
-
+  display: block;
 }
 .card-lecture-footer {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 .card-lecture-chapter {
-    margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 </style>

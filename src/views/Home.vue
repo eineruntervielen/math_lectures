@@ -1,19 +1,19 @@
 <template>
-  <div class="home">
     <GreetingHome />
     <div class="flexbox">
       <Card-Lecture 
       header="Mathematik 1"
       description="Basisvorlesung mit Einführung in Mengentheorie und Lineare Algebra"
       numberOfChapters="10"
+      innerRef="MA1"
       />
       <Card-Lecture 
       header="Mathematik 2"
       description="Basisvorlesung in Analysis für Informatiker mit reeller Analysis"
       numberOfChapters="8"
+      innerRef="MA2"
       />
     </div>
-  </div>
 </template>
 
 <script>

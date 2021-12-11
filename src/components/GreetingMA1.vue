@@ -1,23 +1,23 @@
 <template>
-  <div class="greeting">
-    <h1>Mathematik</h1>
+<div class="greeting">
+    <h1>Mathematik 1</h1>
     <h2>Für Informatiker:innen</h2>
-  </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: "GreetingHome",
-};
+    name: "GreetingMA1"
+}
 </script>
 
 <style scoped>
 .greeting {
   width: 100vw;
-  background: #96ceb4;
+  background-color: rgb(140, 240, 153);
   height: 35vh;
   color: white;
-  text-shadow: 2px 2px #559376;
+  text-shadow: 2px 2px rgb(57, 173, 73);
 }
 
 .greeting h1 {

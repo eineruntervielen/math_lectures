@@ -1,59 +1,69 @@
 <template>
-  <Sidebar />
-  <div class="content">
-    <!-- <p>
-      When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and
-      they are \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-    </p> -->
-    <p>
-      Zunächst wollen wir uns mit den Grundlagen der Mengenlehre auseinander
-      setzen.
-    </p>
-    <p>
-      Der bedeutende Deutsche Mathematiker Georg Cantor (*1845 in Sankt
-      Petersburg , † 1918 in Halle an der Saale) gilt als Begründer der naiven
-      Mengenlehre. Den Begriff der Menge fasste er wie folgt zusammen:
-    </p>
-    <definition
-      nummer="1"
-      txt="
-    Eine Menge ist eine Zusammenfassung von unterscheidbaren Objekten.
-    Diese Objekte heissen Elemente der Menge.<br>
-    Man bezeichnet Mengen meist mit lateinischen Großbuchstaben und Elemente mit
-    lateinischen Kleinbuchstaben.<br>
-    Sei $M$ eine Menge und $x$ ein Objekt, dann schreibt man:<br>
-    $x \in M$, falls $x$ ein Element von $M$ ist<br>
-    $x \notin M$, falls $x$ kein Element von $M$ ist.
-    "
+  <GreetingMA1 />
+  <div class="grid">
+    <card-lesson v-for="lesson in lessons"
+    :key="lesson.nummer"
+    :nummer="lesson.nummer"
+    :name="lesson.name"
+    :description="lesson.description"
+    :innerRef="lesson.innerRef"
     />
-
-    <p>
-      Die Elemente einer Menge müssen nicht gleichartig sein.
-      <br />
-      Man kann Mengen als zwei verschiedene Arten definieren: $$A := \lbrace
-      rot, blau, geld \rbrace$$
-    </p>
   </div>
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar.vue";
-import definition from "@/components/Definition.vue";
-// import {Sets} from "@/sketches/Sets.js"
-// const p5 = require("p5");
+import GreetingMA1 from "@/components/GreetingMA1.vue";
+import CardLesson from "@/components/CardLesson.vue";
 
 export default {
-  name: "MA1",
+  name: "Home",
   components: {
-    Sidebar,
-    definition,
+    GreetingMA1,
+    CardLesson,
+  },
+  data() {
+    return {
+      lessons: [
+        {
+          nummer: 0,
+          name: "Logik",
+          description: "Aussagenlogik",
+          innerRef: "MA1/0_logik"
+        },
+        {
+          nummer: 1,
+          name: "Mengenlehre",
+          description: "Naive Mengenlehre nach G. Cantor",
+          innerRef: "MA1/1_Mengenlehre"
+        },
+        {
+          nummer: 2,
+          name: "Vollständige Induktion",
+          description: "Beweisstrategie der Natürlichen Zahlen",
+        },
+        {
+          nummer: 3,
+          name: "Relationen und Abbildungen",
+          description: ""
+          
+        },
+        {
+          nummer: 4,
+          name: "Körper",
+          description: ""
+          
+        }
+      ],
+    };
   },
 };
 </script>
 
 <style scoped>
-p {
-  margin-top: 1rem;
-  padding: 1rem;
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  height: 100%;
 }
 </style>

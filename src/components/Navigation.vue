@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-  <router-link to="/"><font-awesome-icon icon="bars" /></router-link>
-    <!-- <router-link to="/1_3_mengen">Mengen</router-link> -->
+    <button id="bars"><font-awesome-icon icon="bars" /></button>
+  <!-- <router-link to="/"><font-awesome-icon icon="bars" /></router-link> -->
   </div>
 </template>
 
@@ -28,5 +28,14 @@ export default {
   font-size: 3rem;
   text-decoration: none;
   color: #2c3e50;
+}
+
+#bars{
+  margin: 1rem;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #2c3e50;
+  background: none;
+  border: none;
 }
 </style>
