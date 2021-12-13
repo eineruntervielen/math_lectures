@@ -27,38 +27,13 @@ export default {
       lessons: [
         {
           nummer: 1,
-          name: "Grundlagen",
-          description:
-            "Logik, Mengenlehre, Beweistechniken (vollständige Induktion) sowie Relationen und Abbildungen",
+          name: "Aussagenlogik",
+          description: "Logik",
           innerRef: "/MA1/0_Logik",
         },
         {
           nummer: 2,
           name: "Lineare Gleichungssysteme",
-          description: "",
-          innerRef: "/MA1",
-        },
-        {
-          nummer: 3,
-          name: "Der relle Vektorraum",
-          description: "",
-          innerRef: "/MA1",
-        },
-        {
-          nummer: 4,
-          name: "Matrizen und Determinanten",
-          description: "",
-          innerRef: "/MA1",
-        },
-        {
-          nummer: 5,
-          name: "Vektorräume",
-          description: "",
-          innerRef: "/MA1",
-        },
-        {
-          nummer: 6,
-          name: "Euklidische Vektorräume",
           description: "",
           innerRef: "/MA1",
         },
