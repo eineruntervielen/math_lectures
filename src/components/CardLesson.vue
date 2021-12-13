@@ -1,5 +1,5 @@
 <template class="card">
-  <a :href="innerRef">
+  <router-link :to="innerRef">
     <div class="card-lesson">
       <div class="card-lesson-header">
         <h1>{{ nummer }}. {{ name }}</h1>
@@ -7,7 +7,7 @@
       <p class="card-lesson-info">{{ description }}</p>
       <div class="card-lesson-footer"></div>
     </div>
-  </a>
+  </router-link>
 </template>
 
 

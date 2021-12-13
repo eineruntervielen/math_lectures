@@ -12,10 +12,15 @@ const routes = [
     name: 'MA1',
     component: () => import(/* webpackChunkName: "about" */ '../views/MA1.vue')
   },
-    {
+  {
     path: '/MA1/1_Mengenlehre',
     name: 'MA1_1_Mengenlehre',
     component: () => import(/* webpackChunkName: "about" */ '../views/MA1/1_Mengenlehre.vue')
+  },
+  {
+    path: '/MA1/0_Logik',
+    name: 'MA1_0_Logik',
+    component: () => import(/* webpackChunkName: "about" */ '../views/MA1/0_Logik.vue')
   }
 ]
 

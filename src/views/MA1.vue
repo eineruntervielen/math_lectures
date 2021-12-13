@@ -1,12 +1,13 @@
 <template>
   <GreetingMA1 />
   <div class="grid">
-    <card-lesson v-for="lesson in lessons"
-    :key="lesson.nummer"
-    :nummer="lesson.nummer"
-    :name="lesson.name"
-    :description="lesson.description"
-    :innerRef="lesson.innerRef"
+    <card-lesson
+      v-for="lesson in lessons"
+      :key="lesson.nummer"
+      :nummer="lesson.nummer"
+      :name="lesson.name"
+      :description="lesson.description"
+      :innerRef="lesson.innerRef"
     />
   </div>
 </template>
@@ -25,34 +26,42 @@ export default {
     return {
       lessons: [
         {
-          nummer: 0,
-          name: "Logik",
-          description: "Aussagenlogik",
-          innerRef: "MA1/0_logik"
-        },
-        {
           nummer: 1,
-          name: "Mengenlehre",
-          description: "Naive Mengenlehre nach G. Cantor",
-          innerRef: "MA1/1_Mengenlehre"
+          name: "Grundlagen",
+          description:
+            "Logik, Mengenlehre, Beweistechniken (vollständige Induktion) sowie Relationen und Abbildungen",
+          innerRef: "/MA1/0_Logik",
         },
         {
           nummer: 2,
-          name: "Vollständige Induktion",
-          description: "Beweisstrategie der Natürlichen Zahlen",
+          name: "Lineare Gleichungssysteme",
+          description: "",
+          innerRef: "/MA1",
         },
         {
           nummer: 3,
-          name: "Relationen und Abbildungen",
-          description: ""
-          
+          name: "Der relle Vektorraum",
+          description: "",
+          innerRef: "/MA1",
         },
         {
           nummer: 4,
-          name: "Körper",
-          description: ""
-          
-        }
+          name: "Matrizen und Determinanten",
+          description: "",
+          innerRef: "/MA1",
+        },
+        {
+          nummer: 5,
+          name: "Vektorräume",
+          description: "",
+          innerRef: "/MA1",
+        },
+        {
+          nummer: 6,
+          name: "Euklidische Vektorräume",
+          description: "",
+          innerRef: "/MA1",
+        },
       ],
     };
   },

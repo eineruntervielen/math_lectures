@@ -2,7 +2,7 @@
   <div class="sidenav">
     <ul>
       <li v-for="item in chapters" v-bind:key="item.nr">
-        <a href="#MA1_1_Grundlagen">{{ item.nr }}. {{ item.name }}</a>
+        <a :href="content.link">{{ content.nr }}. {{ content.name }}</a>
       </li>
     </ul>
   </div>
@@ -11,15 +11,9 @@
 <script>
 export default {
   name: "Sidebar",
-  data() {
-    return {
-      chapters: [
-        { nr: 1, name: "Grundlagen" },
-        { nr: 2, name: "LineareGleichungssysteme" },
-        { nr: 3, name: "Vektorraum" },
-      ],
-    };
-  },
+  props: {
+    content: Object,
+  }
 };
 </script>
 
