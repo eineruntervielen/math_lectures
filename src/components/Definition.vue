@@ -20,7 +20,7 @@ export default {
 .definition {
   margin-top: 1rem;
   padding: 1rem;
-  border: 1px #2c3e50 dashed;
+  border: 1px var(--main-color) dashed;
   border-radius: 1rem;
 }
 .definition h1 {

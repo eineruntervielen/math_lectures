@@ -1,7 +1,7 @@
 <template>
   <!-- <NavigationSlide /> -->
   <Navigation />
-    <router-view/>
+  <router-view />
 </template>
 
 <script>
@@ -24,7 +24,8 @@ export default {
 }
 
 :root {
-  --font-color: #2c3e50; 
+  --font-color: #2c3e50;
+  --main-color: #96ceb4;
 }
 
 #app {
@@ -42,5 +43,25 @@ export default {
 .content {
   max-width: 40vw;
   margin: auto;
+}
+
+u {
+  text-decoration-color: var(--main-color);
+}
+
+ol.roman {
+  list-style-type: lower-roman;
+}
+table{
+  margin: auto;
+}
+table, td {
+  align-content: center;
+  border: 1px solid var(--main-color);
+  border-collapse: collapse;
+}
+td {
+  padding: 0 0.5rem;
+  text-align: center;
 }
 </style>

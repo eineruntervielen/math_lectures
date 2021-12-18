@@ -47,6 +47,7 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: auto auto;
+
   justify-content: center;
   height: 100%;
 }
