@@ -4,7 +4,7 @@ export function Sets(p) {
     }
 
     p.draw = () => {
-        p.background(0);
+        p.background(230);
         p.ellipse(p.mouseX, p.mouseY, 20, 20);
     }
 }

@@ -35,6 +35,7 @@ export default {
   min-width: 20vw;
   max-width: 30vw;
   min-height: 40vh;
+  position: relative;
 
   margin: 1rem;
   padding: 1rem;
@@ -54,6 +55,8 @@ export default {
 }
 .card-lecture-footer {
   margin-top: 1rem;
+  position: absolute;
+  bottom: 1rem;
 }
 .card-lecture-chapter {
   margin-left: 0.5rem;

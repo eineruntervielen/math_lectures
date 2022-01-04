@@ -33,9 +33,9 @@ export default {
         },
         {
           nummer: 2,
-          name: "Lineare Gleichungssysteme",
-          description: "",
-          innerRef: "/MA1",
+          name: "Beweismethoden",
+          description: "Direkter Beweis, Indirekter Beweis, Widerspruchsberweis, Vollständige Induktion",
+          innerRef: "/MA1/1_Vollstaendige_Induktion",
         },
       ],
     };

@@ -6,13 +6,11 @@
 
 <script>
 import Navigation from "./components/Navigation.vue";
-// import NavigationSlide from "./components/NavigationSlide.vue";
 
 export default {
   name: "App",
   components: {
     Navigation,
-    // NavigationSlide
   },
 };
 </script>
@@ -21,6 +19,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  scroll-margin: 90px;
 }
 
 :root {
@@ -32,7 +31,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: var(--font-color);
   font-size: 16pt;
 }
 #app a {
@@ -52,6 +51,8 @@ u {
 ol.roman {
   list-style-type: lower-roman;
 }
+
+/* Table definition */
 table{
   margin: auto;
 }
@@ -63,5 +64,13 @@ table, td {
 td {
   padding: 0 0.5rem;
   text-align: center;
+}
+
+hr {
+  color: var(--main-color);
+  border-style: solid;
+  margin: 2em;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 </style>

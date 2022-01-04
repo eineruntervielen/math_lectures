@@ -2,7 +2,7 @@
   <div class="lesson-summary">
     <h1 class="header">Zusammenfassung</h1>
     <div class="lesson-summary-content">
-      <span v-html="txt"></span>
+      <slot></slot>
     </div>
   </div>
 </template>

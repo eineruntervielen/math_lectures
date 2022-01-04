@@ -8,19 +8,24 @@ const routes = [
     component: Home
   },
   {
+    path: '/sketch',
+    name: 'Sketch',
+    component: () => import('../views/Sketch.vue')
+  },
+  {
     path: '/MA1',
     name: 'MA1',
     component: () => import(/* webpackChunkName: "about" */ '../views/MA1.vue')
   },
   {
-    path: '/MA1/1_Mengenlehre',
-    name: 'MA1_1_Mengenlehre',
-    component: () => import(/* webpackChunkName: "about" */ '../views/MA1/1_Mengenlehre.vue')
+    path: '/MA1/Mengenlehre',
+    name: 'MA1_Mengenlehre',
+    component: () => import(/* webpackChunkName: "about" */ '../views/MA1/Mengenlehre.vue')
   },
   {
-    path: '/MA1/0_Logik',
-    name: 'MA1_0_Logik',
-    component: () => import(/* webpackChunkName: "about" */ '../views/MA1/0_Logik.vue')
+    path: '/MA1/Aussagenlogik',
+    name: 'MA1_Aussagenlogik',
+    component: () => import(/* webpackChunkName: "about" */ '../views/MA1/Aussagenlogik.vue')
   }
 ]
 

@@ -14,7 +14,7 @@ export default {
 <style scoped>
 .greeting {
   width: 100vw;
-  background: #96ceb4;
+  background: var(--main-color);
   height: 35vh;
   color: white;
   text-shadow: 2px 2px #559376;
